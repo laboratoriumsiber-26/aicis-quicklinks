@@ -230,6 +230,28 @@ body {
     border-color: transparent;
 }
 
+/* Disabled Button */
+.link-btn.disabled-btn {
+    background-color: #ebebeb;
+    color: #999999;
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.link-btn.disabled-btn .icon {
+    color: #a0a0a0;
+}
+
+.link-btn.disabled-btn:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: #e0e0e0;
+    color: #999999;
+}
+
+
 .link-btn.primary-btn:hover .icon {
     color: var(--text-main);
 }
