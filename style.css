@@ -184,13 +184,15 @@ body {
     background-color: var(--card-bg-white);
     color: var(--text-main);
     text-decoration: none;
-    padding: 18px 24px;
+    padding: 16px 24px 16px 64px; /* Added left padding to protect icon */
     border-radius: var(--border-radius-md);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px; /* Slightly smaller for better fit */
+    line-height: 1.4; /* Better readability for wrapping text */
     transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     border: 1px solid transparent;
+    text-align: center;
 }
 
 .link-btn .icon {
@@ -317,17 +319,19 @@ body {
     }
 
     .description-card {
-        padding: 20px;
+        padding: 16px;
         font-size: 14px;
     }
 
     .link-btn {
-        padding: 16px 20px;
-        font-size: 15px;
+        padding: 14px 20px 14px 52px;
+        font-size: 14px;
+        justify-content: flex-start;
+        text-align: left;
     }
 
     .link-btn .icon {
-        left: 20px;
+        left: 18px;
         font-size: 18px;
     }
 }
